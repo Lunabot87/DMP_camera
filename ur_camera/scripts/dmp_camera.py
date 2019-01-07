@@ -27,7 +27,7 @@ class depth_estimater:
         self.mf.registerCallback(self.ImageCallback)
         self.color_hsv = {}
         self.color_hsv['initial'] = [71, 133, 108, 120, 255, 255]
-        self.color_hsv['goal'] = [19, 64, 209, 60, 211, 255]
+        self.color_hsv['goal'] = [19, 64, 209, 60, 255, 255]
         self.color_hsv['obstacle'] = [118, 166, 63, 171, 255, 202]
         self.br = tf.TransformBroadcaster()
         self.ave = 0.0
