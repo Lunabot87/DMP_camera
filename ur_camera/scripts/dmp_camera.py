@@ -26,9 +26,9 @@ class depth_estimater:
         self.mf = message_filters.ApproximateTimeSynchronizer([sub_rgb, sub_depth], 100, 10.0)
         self.mf.registerCallback(self.ImageCallback)
         self.color_hsv = {}
-        self.color_hsv['initial'] = [61, 73, 75, 120, 200, 255]
-        self.color_hsv['goal'] = [29, 64, 209, 57, 211, 255]
-        self.color_hsv['obstacle'] = [119, 99, 63, 153, 238, 202]
+        self.color_hsv['initial'] = [71, 133, 108, 120, 255, 255]
+        self.color_hsv['goal'] = [19, 64, 209, 60, 211, 255]
+        self.color_hsv['obstacle'] = [118, 166, 63, 171, 255, 202]
         self.br = tf.TransformBroadcaster()
         self.ave = 0.0
  
